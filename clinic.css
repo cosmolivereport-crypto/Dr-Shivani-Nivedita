@@ -34,3 +34,15 @@
 .child-services-section .child-service-body .number{display:block;margin-bottom:8px}
 .child-services-section .child-service-body h3{margin-bottom:10px}
 @media(max-width:800px){.child-services-section .child-service-image{height:185px}.child-services-section .child-service-body{padding:20px}}
+
+/* Homepage Child Care cards: clean horizontal layout */
+.child-home-services .child-services-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px!important;align-items:stretch}
+.child-home-services .child-service-highlight{width:100%!important;min-width:0!important;min-height:118px!important;height:auto!important;padding:22px 24px!important;display:flex!important;flex-direction:row!important;align-items:center!important;gap:16px!important;border-radius:16px!important}
+.child-home-services .child-service-highlight:before{width:3px!important}
+.child-home-services .child-service-highlight .number{flex:0 0 auto;margin:0!important;font-size:9px}
+.child-home-services .child-service-highlight h3{margin:0!important;font-size:19px!important;line-height:1.18!important}
+.child-home-services .child-service-highlight p{display:none!important}
+.child-home-services .child-service-highlight:hover{transform:translateY(-3px)!important}
+.child-home-services .outline-link{margin-top:22px}
+@media(max-width:1050px){.child-home-services .child-services-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:480px){.child-home-services .child-services-grid{grid-template-columns:1fr!important}.child-home-services .child-service-highlight{min-height:92px!important;padding:18px 20px!important}}
