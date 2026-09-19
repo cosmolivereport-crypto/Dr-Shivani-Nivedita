@@ -26,3 +26,11 @@
 .child-service-highlight p{font-size:12px;line-height:1.65;color:var(--muted);margin:0}
 @media(max-width:1050px){.child-services-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.child-services-grid{grid-template-columns:1fr}.child-service-highlight{min-height:auto}}
+
+/* Service photography on Child Care page */
+.child-services-section .child-service-highlight{padding:0;display:flex;flex-direction:column}
+.child-services-section .child-service-image{width:100%;height:168px;object-fit:cover;display:block;border-radius:17px 17px 0 0}
+.child-services-section .child-service-body{padding:22px 22px 24px}
+.child-services-section .child-service-body .number{display:block;margin-bottom:8px}
+.child-services-section .child-service-body h3{margin-bottom:10px}
+@media(max-width:800px){.child-services-section .child-service-image{height:185px}.child-services-section .child-service-body{padding:20px}}
