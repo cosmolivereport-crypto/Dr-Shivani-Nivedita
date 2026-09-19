@@ -114,3 +114,14 @@
 .child-home-care-list .outline-link{margin:24px auto 0}
 @media(max-width:900px){.child-condition-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.child-condition-grid{grid-template-columns:1fr}.child-condition-grid a{min-height:90px;padding:18px 20px}.child-condition-grid a b{font-size:18px;max-width:none}}
+
+/* Photo cards for homepage Child Care services */
+.child-photo-service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.child-photo-service-card{height:190px;position:relative;overflow:hidden;border-radius:16px;background:#eaf2f1;border:1px solid var(--line);box-shadow:0 10px 26px rgba(20,45,65,.06);display:block}
+.child-photo-service-card img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .55s ease,filter .35s ease}
+.child-photo-service-card:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,43,67,0) 38%,rgba(16,43,67,.72) 100%)}
+.child-photo-service-card span{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;color:#fff;font:600 18px/1.2 'Playfair Display',Georgia,serif;text-shadow:0 2px 12px rgba(0,0,0,.18)}
+.child-photo-service-card:hover img{transform:scale(1.06);filter:saturate(1.04)}
+.child-photo-service-card:hover{box-shadow:0 16px 34px rgba(20,45,65,.12);transform:translateY(-3px)}
+@media(max-width:900px){.child-photo-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.child-photo-service-card{height:185px}}
+@media(max-width:520px){.child-photo-service-grid{grid-template-columns:1fr}.child-photo-service-card{height:220px}.child-photo-service-card span{font-size:19px}}
