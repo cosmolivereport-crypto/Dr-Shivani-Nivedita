@@ -125,3 +125,14 @@
 .child-photo-service-card:hover{box-shadow:0 16px 34px rgba(20,45,65,.12);transform:translateY(-3px)}
 @media(max-width:900px){.child-photo-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.child-photo-service-card{height:185px}}
 @media(max-width:520px){.child-photo-service-grid{grid-template-columns:1fr}.child-photo-service-card{height:220px}.child-photo-service-card span{font-size:19px}}
+
+/* Compact homepage Child Care photo boxes */
+.child-home-care-list .child-photo-service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.child-home-care-list .child-photo-service-card{height:92px;min-height:92px;display:flex;align-items:center;gap:13px;padding:9px 14px;background:#fff;border:1px solid var(--line);border-radius:14px;position:relative;overflow:hidden;box-shadow:0 7px 20px rgba(20,45,65,.045);transition:transform .25s,box-shadow .25s,border-color .25s}
+.child-home-care-list .child-photo-service-card:after{display:none}
+.child-home-care-list .child-photo-service-card img{width:68px;height:68px;flex:0 0 68px;border-radius:10px;object-fit:cover;display:block;transition:transform .3s ease}
+.child-home-care-list .child-photo-service-card span{position:static;display:block;color:var(--navy);font:600 16px/1.18 'Playfair Display',Georgia,serif;text-shadow:none;max-width:none}
+.child-home-care-list .child-photo-service-card:hover{transform:translateY(-3px);box-shadow:0 13px 28px rgba(20,45,65,.08);border-color:#c8dedd}
+.child-home-care-list .child-photo-service-card:hover img{transform:scale(1.04);filter:none}
+@media(max-width:1050px){.child-home-care-list .child-photo-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.child-home-care-list .child-photo-service-grid{grid-template-columns:1fr}.child-home-care-list .child-photo-service-card{height:82px;min-height:82px}.child-home-care-list .child-photo-service-card img{width:60px;height:60px;flex-basis:60px}.child-home-care-list .child-photo-service-card span{font-size:17px}}
